@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgba(146, 146, 146, 0.63);
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    background: black;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.intro{
+    cursor: pointer;
+    margin-left: 20px;
+    animation: fadein 2s;
+    margin-right: auto;
+    margin-top: 10px;
+    font-family: "Permanent Marker", sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    background: linear-gradient(270deg,rgba(235, 17, 17, 0.849),rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.navs{
+    list-style: none;
+    text-decoration: none;
+}
+
+.navs li {
+    display: inline-block;
+    padding: 20px 20px 20px 20px;
+    animation: fadein 2s;
+    cursor: pointer;
+    
+}
+
+.navs li a:hover{
+    color: rgba(1, 255, 170, 0.479);
+}
+
+.cta {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 5px 15px;
+    color: black;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(235, 17, 17, 0.849), white);
+}
+
+.cta:hover{
+    background-color: rgba(6, 160, 52, 0.322);
+}
+
+li,a,button {
+    font-family: "Permanent Marker", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.904);
+}
+
+@keyframes fadein{
+    from {
+        opacity: 0;
+    }
+
+    to{
+        opacity: 100;
+    }
+}
+
+i{
+    color:  black;
+    margin: 4px 4px 4px 4px;
+    padding: 2px 2px 2px 2px;
+}
+
+#navbar header{
+    font-family: "Lato",sans-serif;
+    display: block;
+    padding: 10px 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+}
+
+#navbar {
+    position: absolute;
+    min-width: 290px;
+    top: 99px;
+    left: 0px;
+    width: 300px;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    
+}
+
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+  
+#navbar li {
+    color: black;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    list-style: none;
+    width: 100%;
+}
+  
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section article {
+    color: #4d4e53;
+    margin: 15px;
+    font-size: 0.96em;
+}
+
+section li {
+    margin: 15px 0px 0px 20px;
+}  
+
+#main-doc header {
+    text-align: left;
+    margin: 0px;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}  
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px)
+{
+    
+    .intro{
+        cursor: pointer;
+        margin-left: 20px;
+        animation: fadein 2s;
+        margin-right: auto;
+        margin-top: 10px;
+        font-family: "Permanent Marker", sans-serif;
+        font-weight: bolder;
+        font-size: 10px;
+        background: linear-gradient(270deg,rgba(235, 17, 17, 0.849),rgb(255, 255, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    #navbar ul {
+        border: 1px solid;
+        height: 207px;
+      }
+    
+      #navbar {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+      }
+    
+      #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+      }
+
+}
+
+
+@media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+}
